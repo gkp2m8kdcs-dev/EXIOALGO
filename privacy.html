@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXIOALGO — Financial Privacy Policy</title>
+  <meta name="description" content="Financial Privacy Policy for the EXIOALGO iOS app." />
+  <meta name="theme-color" content="#0e0d0c" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0e0d0c;
+      color: #e9e7e2;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.01em; }
+    h2 {
+      font-size: 18px;
+      margin: 40px 0 8px;
+      color: #f4c44a;
+      letter-spacing: 0.01em;
+      scroll-margin-top: 16px;
+    }
+    h3 { font-size: 15px; margin: 24px 0 6px; color: #ffffff; }
+    p, li { font-size: 15px; color: #d6d3cd; }
+    .meta { color: #8a847b; font-size: 13px; margin-bottom: 32px; }
+    .card {
+      background: #1a1815;
+      border: 1px solid rgba(244, 196, 74, 0.25);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    a { color: #f4c44a; text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 8px; }
+    hr { border: none; border-top: 1px solid #2a2622; margin: 32px 0; }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #8a847b;
+    }
+    .top a { color: #f4c44a; }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2622;
+      color: #8a847b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <a href="index.html">&larr; Back to overview</a>
+    <span>EXIOALGO &middot; v1.0</span>
+  </div>
+
+  <h1>Financial Privacy Policy</h1>
+  <p class="meta">Last updated: <span id="updated"></span></p>
+
+  <div class="card">
+    <p>
+      EXIOALGO (&ldquo;the App&rdquo;) is designed to help you record, visualize, and
+      understand the historical purchasing power of items you have purchased. We
+      treat the financial information you store on this device as sensitive
+      personal data and have built the App around a local-first, on-device model.
+    </p>
+  </div>
+
+  <h2 id="data-we-process">1. Data We Process</h2>
+  <p>
+    All data you enter &mdash; including item names, original prices, purchase
+    dates, categories, currency, optional photos, and optional location tags
+    &mdash; is stored locally on your device using the App&rsquo;s private sandbox.
+    We do not operate any backend server that receives, stores, or processes your
+    memories, prices, or photos.
+  </p>
+
+  <h2 id="tracking">2. Information Collection &amp; Tracking</h2>
+  <p>
+    The App does not include advertising SDKs, analytics trackers, or third-party
+    data-collection frameworks. We do not collect your Advertising Identifier
+    (IDFA), and we do not perform any cross-app or cross-website tracking.
+    Consequently, the App does not request App Tracking Transparency permission.
+  </p>
+
+  <h2 id="permissions">3. Permissions Requested (Financial Use Cases)</h2>
+  <p>
+    The App requests only the iOS permissions required to provide its financial
+    memory features. Each permission is tied directly to a user-initiated action:
+  </p>
+  <ul>
+    <li>
+      <strong>Face ID</strong> &mdash; used solely to unlock your private
+      financial memory vault and protect the visibility of your stored price
+      history. The App never uses biometric data for identification, analytics,
+      or any purpose beyond the system authentication prompt shown to you.
+    </li>
+    <li>
+      <strong>Photo Library (Read)</strong> &mdash; used to attach receipts or
+      item photos to a specific financial memory you are creating or editing.
+      Photos you attach are stored inside the App&rsquo;s private sandbox,
+      alongside the price record they belong to.
+    </li>
+    <li>
+      <strong>Photo Library (Add)</strong> &mdash; used only when you choose to
+      save a rendered inflation report image back to your Photos library via
+      the &ldquo;Save Report to Photos&rdquo; action in Settings. The App requests
+      add-only access so it cannot read other photos on your device.
+    </li>
+    <li>
+      <strong>Camera</strong> &mdash; used only when you choose to capture a new
+      photo of a receipt or item, so it can be linked to a financial memory.
+      Camera frames are not transmitted off-device.
+    </li>
+    <li>
+      <strong>Location</strong> &mdash; used only when you attach a region tag
+      to a memory, so the App can localize purchasing-power analysis. The App
+      performs a single, one-shot location request; it does not perform
+      continuous background location tracking and does not store a history of
+      your locations.
+    </li>
+    <li>
+      <strong>Notifications</strong> &mdash; used to deliver in-app reminders
+      about purchasing-power milestones and financial-memory insights you have
+      opted into. No financial data is included in the notification payload
+      itself.
+    </li>
+    <li>
+      <strong>App Transport Security</strong> &mdash; the App is fully local
+      and does not initiate outbound network requests, so the ATS exception is
+      configured defensively (<code>NSAllowsArbitraryLoads = true</code>) in case
+      a future dependency or document picker requires flexible network behavior.
+      No financial data is ever transmitted.
+    </li>
+  </ul>
+
+  <h2 id="permissions-not-requested">3a. Permissions Not Requested</h2>
+  <p>
+    Reports and insights can also be shared through the standard iOS share
+    sheet to any destination you choose. The App never uploads financial data
+    to any service and never saves images to your photo library without an
+    explicit tap from you.
+  </p>
+
+  <h2 id="storage">4. Local Storage &amp; Encryption</h2>
+  <p>
+    Memories and their associated financial fields are persisted in the
+    App&rsquo;s private container. The Memory Vault feature, when enabled in
+    Settings, adds an additional on-device authentication gate (Face ID /
+    device passcode) on top of the standard iOS sandbox. When you enable the
+    vault, financial memories are not visible until authentication succeeds,
+    and they are automatically re-locked when the App is sent to the
+    background.
+  </p>
+
+  <h2 id="sharing">5. Sharing &amp; Export</h2>
+  <p>
+    The App never uploads your financial memories to any service. The only way
+    data leaves the device is when you explicitly tap &ldquo;Export Memory
+    Report&rdquo; in Settings and choose a destination in the standard iOS
+    share sheet. Even in that case, the export contains a plain-text summary
+    of the figures you have stored locally; it is sent only to the destination
+    you select.
+  </p>
+
+  <h2 id="retention">6. Data Retention &amp; Deletion</h2>
+  <p>
+    You retain full control of your financial data. Deleting a memory removes
+    it from the App immediately. Uninstalling the App permanently removes all
+    locally stored memories, attached photos, and profile data, because no
+    off-device copy exists.
+  </p>
+
+  <h2 id="rights">7. Your Rights</h2>
+  <p>
+    Because data is stored only on your device, you can exercise access,
+    correction, and deletion rights directly inside the App. If you contact us
+    for support, we will only ever ask you to describe an issue &mdash; we will
+    not request that you send us your stored prices, memories, or photos.
+  </p>
+
+  <h2 id="children">8. Children&rsquo;s Financial Data</h2>
+  <p>
+    The App is not directed at children under the age of consent in your
+    jurisdiction, and we do not knowingly collect financial data from children.
+    The App does not include any in-app purchase or account-creation flow.
+  </p>
+
+  <h2 id="changes">9. Changes to This Policy</h2>
+  <p>
+    If we make material changes to this Financial Privacy Policy, we will
+    update the &ldquo;Last updated&rdquo; date above and surface a notice
+    inside the App on the next launch. Continued use of the App after such a
+    notice indicates that you have reviewed the updated policy.
+  </p>
+
+  <h2 id="contact">10. Contact</h2>
+  <p>
+    Questions about this Financial Privacy Policy or about how your financial
+    data is handled can be sent to our support team at
+    <a href="mailto:hothkivui45958@icloud.com">hothkivui45958@icloud.com</a>.
+  </p>
+
+  <hr />
+
+  <div class="top">
+    <a href="index.html">&larr; Back to overview</a>
+    <span>End of policy</span>
+  </div>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> EXIOALGO. This Financial Privacy Policy is
+      provided in English. Translations, where provided, are for convenience
+      only; in the event of any conflict, the English version prevails.
+    </p>
+  </footer>
+
+  <script>
+    var opts = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('updated').textContent =
+      new Date().toLocaleDateString('en-US', opts);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

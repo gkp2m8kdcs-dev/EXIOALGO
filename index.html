@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXIOALGO — Privacy &amp; Data Information</title>
+  <meta name="description" content="Privacy and data-handling information for the EXIOALGO iOS app." />
+  <meta name="theme-color" content="#0e0d0c" />
+  <link rel="stylesheet" href="privacy.html" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0e0d0c;
+      color: #e9e7e2;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.01em; }
+    h2 { font-size: 18px; margin: 32px 0 8px; color: #f4c44a; letter-spacing: 0.01em; }
+    h3 { font-size: 15px; margin: 24px 0 6px; color: #ffffff; }
+    p, li { font-size: 15px; color: #d6d3cd; }
+    .meta { color: #8a847b; font-size: 13px; margin-bottom: 32px; }
+    .card {
+      background: #1a1815;
+      border: 1px solid rgba(244, 196, 74, 0.25);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .card.tinted {
+      border-color: rgba(244, 196, 74, 0.45);
+      background: linear-gradient(180deg, #1d1a16 0%, #1a1815 100%);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #f4c44a;
+      background: rgba(244, 196, 74, 0.12);
+      border: 1px solid rgba(244, 196, 74, 0.35);
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+    a { color: #f4c44a; text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+    ul { padding-left: 20px; }
+    ul li { margin-bottom: 6px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .tile {
+      display: block;
+      background: #141210;
+      border: 1px solid #2a2622;
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+    .tile:hover, .tile:focus {
+      border-color: rgba(244, 196, 74, 0.45);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .tile h3 {
+      margin: 0 0 8px;
+      color: #f4c44a;
+      font-size: 16px;
+    }
+    .tile p {
+      margin: 0;
+      font-size: 13px;
+      color: #b9b4ab;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 1px solid #f4c44a;
+      color: #f4c44a;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 160ms ease, color 160ms ease;
+    }
+    .cta:hover, .cta:focus {
+      background: #f4c44a;
+      color: #1a1815;
+      text-decoration: none;
+    }
+    hr { border: none; border-top: 1px solid #2a2622; margin: 32px 0; }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2622;
+      color: #8a847b;
+      font-size: 13px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-right: 6px;
+    }
+    .pill.local { background: rgba(120, 200, 140, 0.12); color: #9bd9a8; border: 1px solid rgba(120, 200, 140, 0.35); }
+    .pill.private { background: rgba(244, 196, 74, 0.12); color: #f4c44a; border: 1px solid rgba(244, 196, 74, 0.35); }
+    .pill.tracking { background: rgba(200, 120, 140, 0.12); color: #d68aa0; border: 1px solid rgba(200, 120, 140, 0.35); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <span class="badge">EXIOALGO &middot; iOS</span>
+    <h1>Privacy &amp; Data Information</h1>
+    <p class="meta">Last updated: <span id="updated"></span></p>
+
+    <div class="card tinted">
+      <p>
+        EXIOALGO is a personal financial-recordkeeping app that helps you record,
+        visualize, and understand the historical purchasing power of items you have
+        purchased. We treat the data you store on this device as sensitive and
+        designed the App around a <strong>local-first, on-device model</strong>:
+        no backend receives, stores, or analyzes your memories, prices, or photos.
+      </p>
+      <p style="margin-bottom:0;">
+        This page is an overview. The complete legal text is in the
+        <a href="privacy.html">Financial Privacy Policy</a>.
+      </p>
+      <a class="cta" href="privacy.html">Read the full policy &rarr;</a>
+    </div>
+
+    <h2>Highlights</h2>
+    <div class="grid">
+      <a class="tile" href="privacy.html#data-we-process">
+        <h3><span class="pill local">Local-only</span> Data lives on-device</h3>
+        <p>Every field you enter — item, price, date, category, photo, optional location — is stored inside the App's private iOS sandbox.</p>
+      </a>
+      <a class="tile" href="privacy.html#tracking">
+        <h3><span class="pill tracking">No</span> No tracking</h3>
+        <p>No advertising SDKs, no analytics trackers, no IDFA collection, and no cross-app or cross-website tracking.</p>
+      </a>
+      <a class="tile" href="privacy.html#permissions">
+        <h3><span class="pill private">On request</span> Permissions only when needed</h3>
+        <p>Face ID, Photos, Camera, Location, and Notifications are requested only when you take the action that needs them.</p>
+      </a>
+      <a class="tile" href="privacy.html#sharing">
+        <h3><span class="pill private">You decide</span> Sharing &amp; export</h3>
+        <p>Data only leaves the device when you tap Export and choose a destination in the iOS share sheet.</p>
+      </a>
+    </div>
+
+    <h2>Quick Facts</h2>
+    <ul>
+      <li><strong>No account required.</strong> You can use the App without signing up for anything.</li>
+      <li><strong>No in-app purchases.</strong> The App contains no payment flow that touches a third party.</li>
+      <li><strong>No background tracking.</strong> No location, activity, or usage telemetry is collected in the background.</li>
+      <li><strong>Optional Memory Vault.</strong> A Face ID / passcode gate in Settings hides your price history until you authenticate.</li>
+      <li><strong>Uninstall = erase.</strong> Because nothing is stored off-device, removing the App permanently deletes all locally stored data.</li>
+    </ul>
+
+    <h2>Where to Read Next</h2>
+    <ul>
+      <li><a href="privacy.html">Financial Privacy Policy</a> — full text, sections 1–10.</li>
+      <li><a href="privacy.html#sharing">Sharing &amp; Export</a> — how the share sheet moves data, and what it contains.</li>
+      <li><a href="privacy.html#retention">Data Retention &amp; Deletion</a> — your controls and what uninstalling does.</li>
+      <li><a href="privacy.html#contact">Contact</a> — how to reach the support team.</li>
+    </ul>
+
+    <hr />
+
+    <footer>
+      <p>
+        EXIOALGO &middot; All financial data is stored privately on this device.
+        Support: <a href="mailto:hothkivui45958@icloud.com">hothkivui45958@icloud.com</a>
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('updated').textContent =
+      new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+</body>
+</html>
